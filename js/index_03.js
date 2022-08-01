@@ -1,18 +1,38 @@
-let a = 2;
-let b = new Number(1);
-let c = 7.19;
-let d = "5.6";
+/* **********     Curso JavaScript: 3. Variables: var 🥊VS🥊 let - #CarlosDiazDev     ********** */
 
-console.log(a, b);
-console.log(c.toFixed(1));
-console.log(c.toFixed(5));
+    var hola = "Hola Mundo";
+    let hello = "Hello World";
+    console.log(hola);
+    console.log(hello);
+    console.log(window);
+    console.log(window.hola);
+    console.log(window.hello);
 
-console.log(parseInt(c));
-console.log(parseFloat(c));
+    //Ambito de bloque
+    //Esto es un bloque - comentario de una lines
 
-console.log(typeof c, typeof d);
-console.log(a + b);
-console.log(c + parseInt(d));
-console.log(c + parseFloat(d));
-console.log(c + Number.parseInt(d));
-console.log(c + Number.parseFloat(d));
+    /*
+    Esto
+    es
+    un
+    comentario
+    de
+    varias
+    líneas */
+
+    console.log ("****************var*****************");
+    var musica = "Rock";
+    console.log("Variable Música antes del Bloque", musica);
+    {
+      var musica = "Pop";
+      console.log("Variable Música dentro del Bloque", musica);
+    }
+    console.log("Variable Música después del Bloque", musica);
+    console.log("****************let*****************");
+    let musica2 = "Rock";
+    console.log("Variable Música antes del Bloque", musica2);
+    {
+      let musica2 = "Pop";
+      console.log("Variable Música dentro del Bloque", musica2);
+    }
+    console.log("Variable Música después del Bloque", musica2);

@@ -1,12 +1,20 @@
-let verdadero = true;
-let falso = false;
-let v = Boolean(true);
-let f = Boolean(false);
+/* **********     Curso JavaScript: 4. Constantes (const) - #CarlosDiazDev     ********** */
 
-console.log(verdadero, falso, v, f);
-console.log(typeof verdadero, typeof falso);
-
-console.log(Boolean(0));
-console.log(Boolean(-7));
-console.log(Boolean(""));
-console.log(Boolean(" "));
+    let a;
+     const PI = 3.1416;
+     //const NUEVE;
+     console.log(PI);
+     //PI = 3.15;
+     a = "kenai";
+     console.log(a);
+     const objeto = {
+       nombre: "Jon",
+       edad: 35
+     }
+     const colores = ["blanco", "negro", "azul"];
+     console.log(objeto);
+     console.log(colores);
+     objeto.correo = "jonmircha@gmail.com";
+     colores.push("anaranjado");
+     console.log(objeto);
+     console.log(colores);
